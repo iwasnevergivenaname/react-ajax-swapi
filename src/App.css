@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.starship-grid {
+  height: 500px;
+  width: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2px;
+  background-color: #2196F3;
+  padding: 2px;
+}
+
+.starship-grid > div {
+  background-color: rgba(222, 127, 127, 0.8);
+  text-align: center;
+  padding: 2px 0;
+  font-size: 8px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
