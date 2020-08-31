@@ -3,7 +3,7 @@ import React, {Component} from "react";
 
 function StarshipButton(props) {
   let count = 0;
-  const allStarships = props.starship.map((s, i) => {
+  const starship = props.allStarships.map((s, i) => {
     count++;
     return <div key={i} className={`item${count}`}>{s.name}: {s.model}<br/>
       {s.crew} for crew<br/>
@@ -16,7 +16,7 @@ function StarshipButton(props) {
 
   return (
     <div className='starship-grid'>
-      {allStarships}
+      {starship}
     </div>
   );
 }
